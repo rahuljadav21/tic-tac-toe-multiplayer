@@ -1,0 +1,96 @@
+.home{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.player{
+    margin: 2vh 0vh;
+}
+.gif{
+    margin-top: 4vh;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+#player1{
+  font-size: medium;
+  border-top:0px;
+  border-left:0px;
+  border-right:0px;
+  padding: 4px;
+}
+
+.invite-form{
+  display: flex;
+  font-size: larger;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.invite-btn{
+  width: 9vh;
+  color: white;
+  border: 0px;
+  height: 5vh;
+  border-radius: 5px;
+  background: #250925;
+}
+#myInput{
+  background: #2509252e;
+}
+.copy-link{
+    margin-left: 5px;
+    background: #250925;
+    border: 0px;
+    color: white;
+    width: 10vh;
+    height: 22px;
+    border-radius: 5px;
+}
+.play-btn{
+  display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #250925;
+    border-radius: 4px;
+    width: 32px;
+    height: 24px;
+}
