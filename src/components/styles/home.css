@@ -66,6 +66,7 @@
   flex-wrap: wrap;
 }
 .invite-btn{
+  cursor: pointer;
   width: 9vh;
   color: white;
   border: 0px;
