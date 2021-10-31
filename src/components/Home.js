@@ -20,7 +20,7 @@ function Home() {
       .then((response) => {
        setGameLink(`/game/${response.data._id}`)
        let gmlink = document.querySelector('#myInput')
-       gmlink.value='https://tic-tac-toe-multiplayer.netlify.app'+`/game/${response.data._id}`
+       gmlink.value=`https://tic-tac-toe-multiplayer.netlify.app/game/${response.data._id}`
       });
         e.preventDefault()
       let link = document.querySelector('.gameLink');
