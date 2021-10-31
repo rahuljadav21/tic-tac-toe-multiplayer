@@ -9,6 +9,7 @@ function Home() {
     const [p1,setP1]=useState('');
     const [p2,setP2]=useState('');
     const [gameLink,setGameLink]=useState({});
+    const [join,setJoin]=useState('/');
 
     function invite(e){
         let data ={
@@ -20,12 +21,13 @@ function Home() {
       .then((response) => {
        setGameLink(`/game/${response.data._id}`)
        let gmlink = document.querySelector('#myInput')
-       gmlink.value=`https://tic-tac-toe-multiplayer.netlify.app/game/${response.data._id}`
+       gmlink.value=`/game/${response.data._id}`
       });
         e.preventDefault()
       let link = document.querySelector('.gameLink');
       link.style.display='block';
-       
+      let j = document.querySelector('.join')
+      j.style.display='none'; 
     }
 
 
@@ -63,6 +65,14 @@ function Home() {
                     <button className="copy-link" onClick={myFunction}>Copy Link</button>
                     <p>Share this Link to your Friend.</p>
                     <Link className="play-btn" to={gameLink}>Play</Link>
+                </div>
+                <div className="join" style={{margin:"3vh"}}>
+                    <p style={{width:"45vh",marginBottom:"1vh"}}>Or Join Game by Pasting the game Link shared by Your Friend . </p>
+                   
+                    <div className="join-container">
+                    <input type="text" onChange={(e)=>{setJoin(e.target.value)}} className="join-input"/>
+                    <Link to={join} className="join-btn" >Join</Link>
+                    </div>
                 </div>
 
                 

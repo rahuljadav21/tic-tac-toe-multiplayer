@@ -97,3 +97,21 @@
     width: 32px;
     height: 24px;
 }
+.join-input{
+  height: 18px;
+  background: #25092524;
+  border-radius: 6px;
+  width: 200px;
+}
+.form-container{
+  width: auto;
+}
+.join-btn{
+  text-decoration: none;
+    background: #250925;
+    color: white;
+    padding: 0px 5px 2px 4px;
+    margin: 1vh;
+    border-radius: 4px;
+    width: auto;
+}
