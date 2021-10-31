@@ -10,7 +10,7 @@ function GameContainer({match,me}) {
     
       if(match.currentTurn===me){
         
-        console.log(e.target.id)
+       
         axios.put(baseUrl+`/game/${match._id}`,{move : e.target.id})
         // let box = document.getElementById(e.target.id);
         // box.innerText=match.turn

@@ -21,7 +21,7 @@ function Game() {
         await axios.get(baseUrl+`/game/${id}`, { withCredentials: false })
             .then((res) => {
                 setMatch(res.data)
-               // console.log(res.data);
+            
             });
 
     }

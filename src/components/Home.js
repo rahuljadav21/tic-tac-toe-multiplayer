@@ -18,7 +18,6 @@ function Home() {
         axios.post(baseUrl+"/game/new",data
       )
       .then((response) => {
-       console.log(response);
        setGameLink(`/game/${response.data._id}`)
        let gmlink = document.querySelector('#myInput')
        gmlink.value='https://tic-tac-toe-multiplayer.netlify.app'+`/game/${response.data._id}`
