@@ -39,7 +39,7 @@ function GameContainer({match,me}) {
         <p>{match.player1} Won : {match.w1}</p>
         <p>{match.player2} Won : {match.w2}</p>
         <p> Draw : {match.draw}</p>
-        <p>{match.winner}</p>         
+        <p>{match.winner!==" " ? `${match.winner} Won  🥳🥳🥳`:``}</p>         
         </div>
 
       </div>
