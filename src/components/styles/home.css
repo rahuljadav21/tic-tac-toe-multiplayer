@@ -78,6 +78,7 @@
 }
 .copy-link{
     margin-left: 5px;
+    cursor: pointer;
     background: #250925;
     border: 0px;
     color: white;
@@ -87,6 +88,7 @@
 }
 .play-btn{
   display: inline-block;
+    cursor: pointer;
     text-decoration: none;
     color: white;
     background: #250925;

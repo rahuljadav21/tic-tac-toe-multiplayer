@@ -21,7 +21,7 @@ function Home() {
        console.log(response);
        setGameLink(`/game/${response.data._id}`)
        let gmlink = document.querySelector('#myInput')
-       gmlink.value=`http://localhost:3000/game/${response.data._id}`
+       gmlink.value=baseUrl+`/game/${response.data._id}`
       });
         e.preventDefault()
       let link = document.querySelector('.gameLink');
